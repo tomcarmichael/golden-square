@@ -1,7 +1,7 @@
 require 'string_builder'
 
 RSpec.describe StringBuilder do
-  it "initializes with an epty string" do 
+  it "initializes with an empty string" do 
     result = StringBuilder.new
     expect(result.output). to eq ""
   end
