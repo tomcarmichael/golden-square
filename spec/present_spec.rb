@@ -1,6 +1,11 @@
 require 'present'
 
 RSpec.describe Present do
+  it 'Wraps and unwraps correctly' do
+    present = Present.new
+    present.wrap(true)
+    expect(present.unwrap).to eq true
+  end
   context 'Throws errors correctly' do
     it 'fails to wrap multiple presents' do
       present = Present.new
